@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú de comida rápida Crunchy Chill">
+  <title>Crunchy Chill | Menú</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <a class="logo" href="#inicio"><img src="CRUNCHY.png" alt="Logo Crunchy Chill"></a>
+      <a class="order-button" href="#menu">Ver menú <span>↓</span></a>
+    </nav>
+    <div class="hero-content container" id="inicio">
+      <p class="eyebrow">Sabor que te lleva lejos · Orgullo que es nuestro · NICARAGUA</p>
+      <h1>ANTOJOS<br><em>sin límites</em></h1>
+      <p class="hero-copy">Comida rápida, crujiente y hecha para compartir.</p>
+      <a class="primary-button" href="#menu">Explorar menú <span>→</span></a>
+    </div>
+    <div class="hero-sticker">¡Recién<br><strong>hecho!</strong></div>
+  </header>
+
+  <main id="menu" class="container menu-area">
+    <div class="section-heading">
+      <div><p class="eyebrow">Elige tu favorito</p><h2>NUESTRO MENÚ</h2></div>
+      <p class="heading-note">Preparado al momento<br>con mucho sabor.</p>
+    </div>
+    <div class="category-bar" role="tablist" aria-label="Categorías del menú">
+      <button class="category active" data-filter="all">Todo</button>
+      <button class="category" data-filter="especiales">Especiales</button>
+      <button class="category" data-filter="hot-dogs">Hot Dogs</button>
+      <button class="category" data-filter="burgers">Burgers</button>
+      <button class="category" data-filter="para-compartir">Para compartir</button>
+      <button class="category" data-filter="bebidas">Bebidas</button>
+    </div>
+
+    <section class="menu-grid" aria-label="Productos del menú">
+      <article class="menu-card featured" data-category="hot-dogs">
+        <div class="card-top"><span class="tag">Favorito</span><span class="card-number">01</span></div>
+        <h3>Hot Dog<br><em>Clásico</em></h3>
+        <p>Salchicha ahumada, queso americano y nuestra salsa especial de la casa con un toque de pepinillos.</p><strong class="price">C$ 60</strong>
+      </article>
+      <article class="menu-card" data-category="hot-dogs">
+        <div class="card-top"><span class="tag">Nuevo</span><span class="card-number">02</span></div>
+        <h3>Hot Dog<br><em>Nica Bacon</em></h3>
+        <p>Salchicha ahumada, queso americano, tocino crujiente y nuestra salsa especial de la casa con pepinillos.</p><strong class="price">C$ 90</strong>
+      </article>
+      <article class="menu-card" data-category="especiales">
+        <div class="card-top"><span class="tag">Nuevo</span><span class="card-number">03</span></div>
+        <h3>Quesadilla<br><em>de Pollo</em></h3><p>Pollo, queso mozzarella y tortilla de harina, acompañada de ensalada con lechuga y pico de gallo, más papas fritas.</p><strong class="price">C$ 200</strong>
+      </article>
+      <article class="menu-card" data-category="especiales">
+        <div class="card-top"><span class="tag">Nuevo</span><span class="card-number">04</span></div>
+        <h3>Quesadilla<br><em>de Res</em></h3><p>Res, queso mozzarella y tortilla de harina, acompañada de ensalada con lechuga y pico de gallo, más papas fritas.</p><strong class="price">C$ 200</strong>
+      </article>
+      <article class="menu-card" data-category="especiales">
+        <div class="card-top"><span class="tag">Top</span><span class="card-number">05</span></div>
+        <h3>Wrap<br><em>Supreme</em></h3><p>Pollo crispy, lechuga fresca, tomate, queso y aderezo de la casa.</p><strong class="price">$17.900</strong>
+      </article>
+      <article class="menu-card" data-category="especiales">
+        <div class="card-top"><span class="tag">Clásico</span><span class="card-number">06</span></div>
+        <h3>Salchipapas<br><em>Full</em></h3><p>Papas crocantes, salchicha, chorizo, queso, tocineta y salsa rosada.</p><strong class="price">$18.900</strong>
+      </article>
+      <article class="menu-card burger-card nica-card" data-category="burgers" tabindex="0" role="button" aria-label="Ver ingredientes de la NICABURGER">
+        <img class="product-image" src="NICABURGER.png" alt="NICABURGER con carne de res premium, lechuga, tomate, cebolla morada, queso americano, salsa de pepinillos y papas fritas">
+        <div class="card-top"><span class="tag">Especial</span><span class="card-number">07</span></div>
+        <h3><em>NICABURGER</em></h3><p>Carne de res premium, lechuga, tomate, cebolla morada, lasca de queso americano y salsa especial de pepinillos. Incluye papas fritas.</p><strong class="price">C$ 180</strong>
+      </article>
+      <article class="menu-card burger-card" data-category="burgers">
+        <div class="card-top"><span class="tag">Doble</span><span class="card-number">08</span></div>
+        <h3>Burger<br><em>Big Chill</em></h3><p>Doble carne, doble cheddar, tocineta, lechuga y salsa BBQ ahumada.</p><strong class="price">$29.900</strong>
+      </article>
+      <article class="menu-card" data-category="especiales">
+        <div class="card-top"><span class="tag">Casero</span><span class="card-number">09</span></div>
+        <h3>Burrito<br><em>Chill</em></h3><p>Arroz, frijoles, pollo, queso, guacamole y pico de gallo en tortilla grande.</p><strong class="price">$19.900</strong>
+      </article>
+      <article class="menu-card" data-category="bebidas">
+        <div class="card-top"><span class="tag">Refrescante</span><span class="card-number">10</span></div>
+        <h3>Frozen<br><em>Fruity</em></h3><p>Granizado de fruta natural con el toque dulce perfecto para acompañar.</p><strong class="price">$9.900</strong>
+      </article>
+      <article class="menu-card" data-category="para-compartir">
+        <div class="card-top"><span class="tag">Para dos</span><span class="card-number">11</span></div>
+        <h3>Nachos<br><em>Loaded</em></h3><p>Totopos, queso cheddar, carne, jalapeños, guacamole y sour cream.</p><strong class="price">$21.900</strong>
+      </article>
+      <article class="menu-card" data-category="para-compartir">
+        <div class="card-top"><span class="tag">Picantes</span><span class="card-number">12</span></div>
+        <h3>Alitas<br><em>BBQ</em></h3><p>Alitas doraditas bañadas en BBQ. Elige 6, 12 o 18 unidades.</p><strong class="price">Desde $18.900</strong>
+      </article>
+      <article class="menu-card" data-category="para-compartir">
+        <div class="card-top"><span class="tag">Crocantes</span><span class="card-number">13</span></div>
+        <h3>Tenders<br><em>de pollo</em></h3><p>Tiras de pollo empanizadas, crujientes y acompañadas de salsa a elección.</p><strong class="price">$17.900</strong>
+      </article>
+    </section>
+
+    <section class="combo-banner"><div><p class="eyebrow">Arma tu combo</p><h2>+ PAPAS<br>+ BEBIDA</h2></div><p>Convierte cualquier burger, wrap o hot dog en combo por solo <strong>$6.000</strong> adicionales.</p><a href="https://wa.me/?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20Crunchy%20Chill" class="primary-button" target="_blank" rel="noopener noreferrer">Pedir ahora <span>→</span></a></section>
+  </main>
+  <div class="burger-modal" id="burger-modal" aria-hidden="true" role="dialog" aria-labelledby="burger-modal-title">
+    <div class="burger-modal__panel">
+      <button class="burger-modal__close" type="button" aria-label="Cerrar detalles">×</button>
+      <div class="burger-modal__intro"><p class="eyebrow">Nuestra especialidad</p><h2 id="burger-modal-title">NICABURGER</h2></div>
+      <div class="burger-product-detail">
+        <div class="burger-photo-wrap"><img src="NICABURGER.png" alt="NICABURGER con papas fritas"></div>
+        <div class="burger-ingredients"><p class="eyebrow">Ingredientes</p><h3>Lo que lleva</h3><ul><li>Carne de res premium</li><li>Lechuga fresca</li><li>Tomate</li><li>Cebolla morada</li><li>Lasca de queso americano</li><li>Salsa especial de pepinillos</li></ul><strong class="burger-fries">＋ Incluye papas fritas</strong></div>
+      </div>
+    </div>
+  </div>
+  <footer id="contacto"><div class="container footer-content"><div class="logo"><img src="CRUNCHY.png" alt="Logo Crunchy Chill"></div><p>Pedidos y domicilios<br><strong>WhatsApp: 300 000 0000</strong></p><p><a class="instagram-link" href="https://instagram.com/_crunchy_chill" target="_blank" rel="noopener noreferrer">Instagram: @_crunchy_chill</a></p><p class="hours">Lun - Dom · 12:00 m — 10:00 pm</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
